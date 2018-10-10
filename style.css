@@ -1,0 +1,134 @@
+/* Page Structure */
+.wrapper {
+  display: grid;
+  grid-template-columns: 300px auto;
+}
+
+.main-doc {
+  grid-column: 2 / 3;
+}
+
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  color: #dddddd;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 15px;
+  height: 100%;
+  border-right: 2px solid #575757;
+}
+
+.navbar header{
+  text-align: center;
+  padding: 0px 15px 0 15px;
+}
+
+.navbar ul {
+  padding: 0;
+  list-style: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 88%;
+  border-top: 2px solid #575757;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #dddddd;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.navbar li:hover {
+  background-color: #292929;
+}
+
+.navbar li {
+  border-bottom: 1px solid #dddddd;
+  padding: 10px 10px 10px 25px;
+}
+
+/* Main content styling */
+header {
+  font-size: 1.5em;
+  padding-top: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+article {
+  padding: 0 10px 40px 20px;
+  margin-right: 10px;
+}
+
+article li {
+  padding-left: 30px;
+}
+
+code{
+  display:block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #313131;
+  padding:15px;
+  margin-right: 10px;
+  border-radius:4px;
+  color: green
+}
+
+/* Mobile users */
+
+/* Page Structure */
+@media screen and (max-width: 800px) {
+  .wrapper {
+    grid-template-columns: auto;
+    grid-template-rows: 350px auto;
+  }
+
+  .main-doc {
+    grid-row: 2 / 3
+  }
+  
+  .navbar {
+    width: 99%;
+    grid-row: 1 / 2;
+    height: 300px;
+    position: absolute;
+  }
+
+  .navbar ul {
+    border-bottom: 2px solid #575757
+  }
+
+  .main-section {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Main content styling */
+  .main-section header,
+  article,
+  article li,
+  article, code {
+    margin-left: 10px;
+    padding: 0;
+    text-align: justify;
+  }
+  article {
+    padding-bottom: 30px;
+  }
+}
