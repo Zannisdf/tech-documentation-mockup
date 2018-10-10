@@ -1,2 +1,2 @@
 # tech-documentation-mockup
-technical documentation page mockup for fcc cert
+technical documentation page mockup for fcc certification
